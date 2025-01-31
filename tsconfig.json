@@ -1,4 +1,5 @@
 {
+    "extends": "@vue/tsconfig/tsconfig.dom.json",
     "compilerOptions": {
         "allowJs": true,
         "module": "ESNext",
@@ -12,7 +13,7 @@
         "noEmit": true,
         "skipLibCheck": true,
         "paths": {
-            "@/*": ["./resources/js/*"],
+            "@/*": ["./resources/js/*", "./resources/*"],
             "ziggy-js": ["./vendor/tightenco/ziggy"]
         }
     },
