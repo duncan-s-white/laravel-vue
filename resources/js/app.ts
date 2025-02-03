@@ -1,5 +1,5 @@
-import '../css/style.css';
-import '../css/satoshi.css';
+import '../js/assets/css/satoshi.css';
+import '../js/assets/css/style.css';
 import './bootstrap';
 
 import { createInertiaApp } from '@inertiajs/vue3';
