@@ -6,13 +6,19 @@ use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
 
 Route::get('/', function () {
-    return Inertia::render('ECommerceView', [
+    return Inertia::render('About', [
         'canLogin' => Route::has('login'),
         'canRegister' => Route::has('register'),
         'laravelVersion' => Application::VERSION,
         'phpVersion' => PHP_VERSION,
     ]);
 });
+
+Route::inertia('/about', 'About');
+
+Route::inertia('/rovers', 'Rovers');
+
+Route::inertia('/game-news', 'GameNewsView');
 
 Route::get('/dashboard', function () {
     return Inertia::render('Dashboard');
