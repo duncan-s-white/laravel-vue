@@ -1,13 +1,11 @@
 <script setup lang="ts">
 import { useSidebarStore } from '@/stores/sidebar.ts';
-import { Link } from '@inertiajs/vue3';
-//import { useRoute } from 'vue-router'
+import { Link, router } from '@inertiajs/vue3';
 import SidebarDropdown from './SidebarDropdown.vue';
 
 const sidebarStore = useSidebarStore();
 
 const props = defineProps(['item', 'index']);
-// const currentPage = useRoute().name
 
 interface SidebarItem {
     label: string;
@@ -17,18 +15,19 @@ const handleItemClick = () => {
     const pageName =
         sidebarStore.page === props.item.label ? '' : props.item.label;
     sidebarStore.page = pageName;
-
     if (props.item.children) {
         return props.item.children.some(
             (child: SidebarItem) => sidebarStore.selected === child.label,
         );
     }
+    if (props.item.route !== '') router.visit(props.item.route);
 };
 </script>
 
 <template>
     <li>
         <Link
+            onclick="return false"
             :href="item.route"
             class="group relative flex items-center gap-2.5 rounded-sm px-4 py-2 font-medium text-bodydark1 duration-300 ease-in-out hover:bg-graydark dark:hover:bg-meta-4"
             @click.prevent="handleItemClick"

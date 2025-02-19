@@ -1,6 +1,6 @@
 {
-  "_DefaultLayout.vue_vue_type_script_setup_true_lang-Bs4GAsnc.js": {
-    "file": "assets/DefaultLayout.vue_vue_type_script_setup_true_lang-Bs4GAsnc.js",
+  "_DefaultLayout.vue_vue_type_script_setup_true_lang-biWgI10A.js": {
+    "file": "assets/DefaultLayout.vue_vue_type_script_setup_true_lang-biWgI10A.js",
     "name": "DefaultLayout.vue_vue_type_script_setup_true_lang",
     "imports": [
       "resources/js/app.ts"
@@ -15,23 +15,23 @@
     ]
   },
   "resources/js/Pages/About.vue": {
-    "file": "assets/About-Bun5yDGi.js",
+    "file": "assets/About-BCM6yqeb.js",
     "name": "About",
     "src": "resources/js/Pages/About.vue",
     "isDynamicEntry": true,
     "imports": [
-      "_DefaultLayout.vue_vue_type_script_setup_true_lang-Bs4GAsnc.js",
+      "_DefaultLayout.vue_vue_type_script_setup_true_lang-biWgI10A.js",
       "resources/js/app.ts"
     ]
   },
   "resources/js/Pages/ECommerceView.vue": {
-    "file": "assets/ECommerceView-BLX8xj0y.js",
+    "file": "assets/ECommerceView-otTsOtFr.js",
     "name": "ECommerceView",
     "src": "resources/js/Pages/ECommerceView.vue",
     "isDynamicEntry": true,
     "imports": [
       "resources/js/app.ts",
-      "_DefaultLayout.vue_vue_type_script_setup_true_lang-Bs4GAsnc.js"
+      "_DefaultLayout.vue_vue_type_script_setup_true_lang-biWgI10A.js"
     ],
     "assets": [
       "assets/user-05-DvLXiEro.png",
@@ -43,27 +43,27 @@
     ]
   },
   "resources/js/Pages/GameNewsView.vue": {
-    "file": "assets/GameNewsView-BbW4wZw3.js",
+    "file": "assets/GameNewsView-ayRSnPSo.js",
     "name": "GameNewsView",
     "src": "resources/js/Pages/GameNewsView.vue",
     "isDynamicEntry": true,
     "imports": [
-      "_DefaultLayout.vue_vue_type_script_setup_true_lang-Bs4GAsnc.js",
+      "_DefaultLayout.vue_vue_type_script_setup_true_lang-biWgI10A.js",
       "resources/js/app.ts"
     ]
   },
   "resources/js/Pages/Rovers.vue": {
-    "file": "assets/Rovers-DkH8B5_B.js",
+    "file": "assets/Rovers-DoBvZac9.js",
     "name": "Rovers",
     "src": "resources/js/Pages/Rovers.vue",
     "isDynamicEntry": true,
     "imports": [
-      "_DefaultLayout.vue_vue_type_script_setup_true_lang-Bs4GAsnc.js",
+      "_DefaultLayout.vue_vue_type_script_setup_true_lang-biWgI10A.js",
       "resources/js/app.ts"
     ]
   },
   "resources/js/app.ts": {
-    "file": "assets/app-D-KenXh5.js",
+    "file": "assets/app-DDBYQAWg.js",
     "name": "app",
     "src": "resources/js/app.ts",
     "isEntry": true,

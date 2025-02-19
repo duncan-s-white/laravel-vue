@@ -30,11 +30,11 @@ const menuGroups = ref([
                   />
                 </svg>`,
                 label: 'Steam',
-                route: '',
+                route: '#',
                 children: [
                     {
-                        label: 'Game News',
-                        route: '/game-news',
+                        label: 'Games',
+                        route: '/games',
                         icon: `<svg xmlns="http://www.w3.org/2000/svg"
                   class="fill-current"
                   width="30"
@@ -63,7 +63,7 @@ const menuGroups = ref([
                     fill=""
                   /></svg>`,
                 label: 'Nasa',
-                route: '',
+                route: '#',
                 children: [
                     {
                         label: 'Rovers',

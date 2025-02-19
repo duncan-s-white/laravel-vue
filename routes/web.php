@@ -1,9 +1,11 @@
 <?php
 
 use App\Http\Controllers\ProfileController;
+use App\Models\App;
 use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
+use Illuminate\Support\Facades\Http;
 
 Route::get('/', function () {
     return Inertia::render('About', [
@@ -18,7 +20,20 @@ Route::inertia('/about', 'About');
 
 Route::inertia('/rovers', 'Rovers');
 
-Route::inertia('/game-news', 'GameNewsView');
+Route::get('/games', function () {
+    return Inertia::render('Games', ['games' => App::paginate(10)]);
+});
+
+Route::get('/games/{id}', function (string $id) {
+
+    $response = Http::get('https://store.steampowered.com/api/appdetails?appids=' . $id);
+
+    $game = json_decode($response, true);
+
+    $game = $game[$id]["data"];
+
+    return Inertia::render('Game', ['game' => $game]);
+});
 
 Route::get('/dashboard', function () {
     return Inertia::render('Dashboard');
