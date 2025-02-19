@@ -1,37 +1,20 @@
 {
-  "_DefaultLayout.vue_vue_type_script_setup_true_lang-biWgI10A.js": {
-    "file": "assets/DefaultLayout.vue_vue_type_script_setup_true_lang-biWgI10A.js",
-    "name": "DefaultLayout.vue_vue_type_script_setup_true_lang",
-    "imports": [
-      "resources/js/app.ts"
-    ],
-    "assets": [
-      "assets/logo-icon-CIBerpFq.svg",
-      "assets/user-01-4yq2_uH2.png",
-      "assets/user-02-C7efGC9p.png",
-      "assets/user-03-CX0CjwG5.png",
-      "assets/user-04-CEXG_9cF.png",
-      "assets/logo-DaTCBI4k.svg"
-    ]
-  },
   "resources/js/Pages/About.vue": {
-    "file": "assets/About-BCM6yqeb.js",
+    "file": "assets/About-DdB8kIQ2.js",
     "name": "About",
     "src": "resources/js/Pages/About.vue",
     "isDynamicEntry": true,
     "imports": [
-      "_DefaultLayout.vue_vue_type_script_setup_true_lang-biWgI10A.js",
       "resources/js/app.ts"
     ]
   },
   "resources/js/Pages/ECommerceView.vue": {
-    "file": "assets/ECommerceView-otTsOtFr.js",
+    "file": "assets/ECommerceView-BzYur5z2.js",
     "name": "ECommerceView",
     "src": "resources/js/Pages/ECommerceView.vue",
     "isDynamicEntry": true,
     "imports": [
-      "resources/js/app.ts",
-      "_DefaultLayout.vue_vue_type_script_setup_true_lang-biWgI10A.js"
+      "resources/js/app.ts"
     ],
     "assets": [
       "assets/user-05-DvLXiEro.png",
@@ -42,41 +25,55 @@
       "assets/brand-05-Dno-UME7.svg"
     ]
   },
-  "resources/js/Pages/GameNewsView.vue": {
-    "file": "assets/GameNewsView-ayRSnPSo.js",
-    "name": "GameNewsView",
-    "src": "resources/js/Pages/GameNewsView.vue",
+  "resources/js/Pages/Game.vue": {
+    "file": "assets/Game-CrduLr40.js",
+    "name": "Game",
+    "src": "resources/js/Pages/Game.vue",
     "isDynamicEntry": true,
     "imports": [
-      "_DefaultLayout.vue_vue_type_script_setup_true_lang-biWgI10A.js",
+      "resources/js/app.ts"
+    ]
+  },
+  "resources/js/Pages/Games.vue": {
+    "file": "assets/Games-BlC_NPAJ.js",
+    "name": "Games",
+    "src": "resources/js/Pages/Games.vue",
+    "isDynamicEntry": true,
+    "imports": [
       "resources/js/app.ts"
     ]
   },
   "resources/js/Pages/Rovers.vue": {
-    "file": "assets/Rovers-DoBvZac9.js",
+    "file": "assets/Rovers-BMX9qcu-.js",
     "name": "Rovers",
     "src": "resources/js/Pages/Rovers.vue",
     "isDynamicEntry": true,
     "imports": [
-      "_DefaultLayout.vue_vue_type_script_setup_true_lang-biWgI10A.js",
       "resources/js/app.ts"
     ]
   },
   "resources/js/app.ts": {
-    "file": "assets/app-DDBYQAWg.js",
+    "file": "assets/app-brhCrTLi.js",
     "name": "app",
     "src": "resources/js/app.ts",
     "isEntry": true,
     "dynamicImports": [
       "resources/js/Pages/About.vue",
       "resources/js/Pages/ECommerceView.vue",
-      "resources/js/Pages/GameNewsView.vue",
+      "resources/js/Pages/Game.vue",
+      "resources/js/Pages/Games.vue",
       "resources/js/Pages/Rovers.vue"
     ],
     "css": [
-      "assets/app-nJBilAf6.css"
+      "assets/app-BGoH1Yqj.css"
     ],
     "assets": [
+      "assets/logo-icon-CIBerpFq.svg",
+      "assets/user-01-4yq2_uH2.png",
+      "assets/user-02-C7efGC9p.png",
+      "assets/user-03-CX0CjwG5.png",
+      "assets/user-04-CEXG_9cF.png",
+      "assets/logo-DaTCBI4k.svg",
       "assets/Satoshi-Light-IqwJ_ZjS.woff2",
       "assets/Satoshi-Light-C_dmkKXz.woff",
       "assets/Satoshi-Light-B82kzbU-.ttf",

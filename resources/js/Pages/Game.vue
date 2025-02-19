@@ -7,7 +7,7 @@ defineProps({
 });
 </script>
 <template>
-    <Head title="game.name" />
+    <Head :title="game.name" />
     <h2 class="mb-10 text-title-md2 font-bold text-black dark:text-white">
         {{ game.name }}
     </h2>
