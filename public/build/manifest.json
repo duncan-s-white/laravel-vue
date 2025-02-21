@@ -1,23 +1,23 @@
 {
-  "_PageTitle-DyLzQcXy.js": {
-    "file": "assets/PageTitle-DyLzQcXy.js",
+  "_PageTitle-sIFIgrTo.js": {
+    "file": "assets/PageTitle-sIFIgrTo.js",
     "name": "PageTitle",
     "imports": [
       "resources/js/app.ts"
     ]
   },
   "resources/js/Pages/About.vue": {
-    "file": "assets/About-CtDnvY6W.js",
+    "file": "assets/About-C2pP_Pvc.js",
     "name": "About",
     "src": "resources/js/Pages/About.vue",
     "isDynamicEntry": true,
     "imports": [
-      "_PageTitle-DyLzQcXy.js",
+      "_PageTitle-sIFIgrTo.js",
       "resources/js/app.ts"
     ]
   },
   "resources/js/Pages/ECommerceView.vue": {
-    "file": "assets/ECommerceView-C3aodRZe.js",
+    "file": "assets/ECommerceView-0CX6-ZQ6.js",
     "name": "ECommerceView",
     "src": "resources/js/Pages/ECommerceView.vue",
     "isDynamicEntry": true,
@@ -34,17 +34,17 @@
     ]
   },
   "resources/js/Pages/Game.vue": {
-    "file": "assets/Game-B0-1mUj_.js",
+    "file": "assets/Game--dhsIMUB.js",
     "name": "Game",
     "src": "resources/js/Pages/Game.vue",
     "isDynamicEntry": true,
     "imports": [
-      "_PageTitle-DyLzQcXy.js",
+      "_PageTitle-sIFIgrTo.js",
       "resources/js/app.ts"
     ]
   },
   "resources/js/Pages/Games.vue": {
-    "file": "assets/Games-C0zK8vmz.js",
+    "file": "assets/Games-D7Gi5WD2.js",
     "name": "Games",
     "src": "resources/js/Pages/Games.vue",
     "isDynamicEntry": true,
@@ -53,17 +53,17 @@
     ]
   },
   "resources/js/Pages/Rovers.vue": {
-    "file": "assets/Rovers-BX0stZBm.js",
+    "file": "assets/Rovers-CyYL1rp7.js",
     "name": "Rovers",
     "src": "resources/js/Pages/Rovers.vue",
     "isDynamicEntry": true,
     "imports": [
-      "_PageTitle-DyLzQcXy.js",
+      "_PageTitle-sIFIgrTo.js",
       "resources/js/app.ts"
     ]
   },
   "resources/js/app.ts": {
-    "file": "assets/app-DdHFfK-l.js",
+    "file": "assets/app-DtZJUI04.js",
     "name": "app",
     "src": "resources/js/app.ts",
     "isEntry": true,

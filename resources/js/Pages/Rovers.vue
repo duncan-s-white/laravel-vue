@@ -31,7 +31,7 @@ axios
     )
     .catch((e) => (error.value = e));
 
-console.log('hello from mars');
+console.log('hello from marsss');
 </script>
 
 <template>

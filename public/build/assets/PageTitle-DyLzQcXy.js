@@ -1,1 +1,0 @@
-import{c as s,a9 as n,o as a}from"./app-DdHFfK-l.js";const l=(t,e)=>{const o=t.__vccOpts||t;for(const[c,r]of e)o[c]=r;return o},_={},d={class:"my-5 text-title-md2 font-bold text-black dark:text-white"};function f(t,e){return a(),s("h2",d,[n(t.$slots,"default")])}const m=l(_,[["render",f]]);export{m as P};
