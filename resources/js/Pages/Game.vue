@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import PageTitle from '@/components/Typography/PageTitle.vue';
+
 defineProps({
     game: {
         type: Object,
@@ -8,11 +10,10 @@ defineProps({
 </script>
 <template>
     <Head :title="game.name" />
-    <h2 class="mb-10 text-title-md2 font-bold text-black dark:text-white">
-        {{ game.name }}
-    </h2>
+    <PageTitle>{{ game.name }}</PageTitle>
+    <a href="#" onclick="window.history.back()">Back to Search</a>
     <img :src="game.header_image" />
     <p class="my-10" v-html="game.detailed_description"></p>
     <strong v-if="game.legal_notice">Legal Notice:</strong>
-    <p>{{ game.legal_notice }}</p>
+    <p v-html="game.legal_notice"></p>
 </template>

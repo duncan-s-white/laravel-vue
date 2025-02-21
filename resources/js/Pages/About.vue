@@ -1,10 +1,10 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import PageTitle from '@/components/Typography/PageTitle.vue';
+</script>
 
 <template>
     <Head title="About" />
-    <h2 class="mb-10 text-title-md2 font-bold text-black dark:text-white">
-        About
-    </h2>
+    <PageTitle>About</PageTitle>
     <p class="mt-3">
         This App is a Laravel 11, Vue 3, Inertia application that also uses
         Tailwind and Typescript.

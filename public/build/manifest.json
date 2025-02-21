@@ -1,15 +1,23 @@
 {
-  "resources/js/Pages/About.vue": {
-    "file": "assets/About-DdB8kIQ2.js",
-    "name": "About",
-    "src": "resources/js/Pages/About.vue",
-    "isDynamicEntry": true,
+  "_PageTitle-3nhX0Fvq.js": {
+    "file": "assets/PageTitle-3nhX0Fvq.js",
+    "name": "PageTitle",
     "imports": [
       "resources/js/app.ts"
     ]
   },
+  "resources/js/Pages/About.vue": {
+    "file": "assets/About-BEPzn7Bh.js",
+    "name": "About",
+    "src": "resources/js/Pages/About.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "_PageTitle-3nhX0Fvq.js",
+      "resources/js/app.ts"
+    ]
+  },
   "resources/js/Pages/ECommerceView.vue": {
-    "file": "assets/ECommerceView-BzYur5z2.js",
+    "file": "assets/ECommerceView-CNmEov_K.js",
     "name": "ECommerceView",
     "src": "resources/js/Pages/ECommerceView.vue",
     "isDynamicEntry": true,
@@ -26,16 +34,17 @@
     ]
   },
   "resources/js/Pages/Game.vue": {
-    "file": "assets/Game-CrduLr40.js",
+    "file": "assets/Game-DYjaIU2k.js",
     "name": "Game",
     "src": "resources/js/Pages/Game.vue",
     "isDynamicEntry": true,
     "imports": [
+      "_PageTitle-3nhX0Fvq.js",
       "resources/js/app.ts"
     ]
   },
   "resources/js/Pages/Games.vue": {
-    "file": "assets/Games-BlC_NPAJ.js",
+    "file": "assets/Games-B8SgmJPB.js",
     "name": "Games",
     "src": "resources/js/Pages/Games.vue",
     "isDynamicEntry": true,
@@ -44,16 +53,17 @@
     ]
   },
   "resources/js/Pages/Rovers.vue": {
-    "file": "assets/Rovers-BMX9qcu-.js",
+    "file": "assets/Rovers-BKDTGr2I.js",
     "name": "Rovers",
     "src": "resources/js/Pages/Rovers.vue",
     "isDynamicEntry": true,
     "imports": [
+      "_PageTitle-3nhX0Fvq.js",
       "resources/js/app.ts"
     ]
   },
   "resources/js/app.ts": {
-    "file": "assets/app-brhCrTLi.js",
+    "file": "assets/app-C8T473gA.js",
     "name": "app",
     "src": "resources/js/app.ts",
     "isEntry": true,
@@ -65,7 +75,7 @@
       "resources/js/Pages/Rovers.vue"
     ],
     "css": [
-      "assets/app-BGoH1Yqj.css"
+      "assets/app-Doi2RHiC.css"
     ],
     "assets": [
       "assets/logo-icon-CIBerpFq.svg",

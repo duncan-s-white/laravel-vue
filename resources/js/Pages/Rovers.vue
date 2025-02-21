@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import PageTitle from '@/components/Typography/PageTitle.vue';
 import axios, { type AxiosResponse } from 'axios';
 import { ref } from 'vue';
 // @ts-expect-error - type error as 3rd party library has no types
@@ -29,13 +30,13 @@ axios
         (response: AxiosResponse<any>) => (responseData.value = response.data),
     )
     .catch((e) => (error.value = e));
+
+console.log('hello from mars');
 </script>
 
 <template>
     <Head title="Rovers" />
-    <h2 class="mb-10 text-title-md2 font-bold text-black dark:text-white">
-        Rovers
-    </h2>
+    <PageTitle>Rovers</PageTitle>
 
     <div
         v-if="responseData"

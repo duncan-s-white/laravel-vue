@@ -1,30 +1,29 @@
-<script lang="ts">
-import { defineComponent } from 'vue'
-
-export default defineComponent({
-  props: {
+<script setup lang="ts">
+defineProps({
+    value: String,
     label: String,
     type: String,
     placeholder: String,
     customClasses: String,
     required: {
-      type: Boolean,
-      default: false
-    }
-  }
-})
+        type: Boolean,
+        default: false,
+    },
+});
+const search = defineModel();
 </script>
 
 <template>
-  <div :class="customClasses">
-    <label class="mb-2.5 block text-black dark:text-white">
-      {{ label }}
-      <span v-if="required" class="text-meta-1">*</span>
-    </label>
-    <input
-      :type="type"
-      :placeholder="placeholder"
-      class="w-full rounded border-[1.5px] text-black border-stroke bg-transparent py-3 px-5 font-normal outline-none transition focus:border-primary active:border-primary disabled:cursor-default disabled:bg-whiter dark:text-white dark:border-form-strokedark dark:bg-form-input dark:focus:border-primary"
-    />
-  </div>
+    <div :class="customClasses">
+        <label class="mb-2.5 block text-black dark:text-white">
+            {{ label }}
+            <span v-if="required" class="text-meta-1">*</span>
+        </label>
+        <input
+            v-model="search"
+            :type="type"
+            :placeholder="placeholder"
+            class="w-full rounded border-[1.5px] border-stroke bg-transparent px-5 py-3 font-normal text-black outline-none transition focus:border-primary active:border-primary disabled:cursor-default disabled:bg-whiter dark:border-form-strokedark dark:bg-form-input dark:text-white dark:focus:border-primary"
+        />
+    </div>
 </template>
