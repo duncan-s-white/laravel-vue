@@ -29,7 +29,7 @@ Route::get('/games', function () {
             })
             ->paginate(10)
             ->withQueryString(),
-        'blah' => Request::only(['search'])
+        'filters' => Request::only(['search'])
     ]);
 });
 

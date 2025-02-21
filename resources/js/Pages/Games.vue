@@ -22,10 +22,10 @@ let props = defineProps({
         type: Object as PropType<Games>,
         required: true,
     },
-    blah: Object,
+    filters: Object,
 });
 
-let search = ref(props && props.blah ? props.blah.search : '');
+let search = ref(props && props.filters ? props.filters.search : '');
 
 watch(search, (value) => {
     router.get(
