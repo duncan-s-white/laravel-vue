@@ -1,23 +1,74 @@
 {
-  "_PageTitle-Cjzr9t7P.js": {
-    "file": "assets/PageTitle-Cjzr9t7P.js",
+  "_AuthLayout-DRFMaF5s.js": {
+    "file": "assets/AuthLayout-DRFMaF5s.js",
+    "name": "AuthLayout",
+    "imports": [
+      "resources/js/app.ts",
+      "__plugin-vue_export-helper-DlAUqK2U.js"
+    ],
+    "assets": [
+      "assets/logo-dark-55uoVN-s.svg",
+      "assets/illustration-03-BIahVyio.svg"
+    ]
+  },
+  "_PageTitle-RvgIkkyY.js": {
+    "file": "assets/PageTitle-RvgIkkyY.js",
     "name": "PageTitle",
     "imports": [
+      "__plugin-vue_export-helper-DlAUqK2U.js",
       "resources/js/app.ts"
     ]
   },
+  "__plugin-vue_export-helper-DlAUqK2U.js": {
+    "file": "assets/_plugin-vue_export-helper-DlAUqK2U.js",
+    "name": "_plugin-vue_export-helper"
+  },
   "resources/js/Pages/About.vue": {
-    "file": "assets/About-3Akznzsz.js",
+    "file": "assets/About-BLxv_BX3.js",
     "name": "About",
     "src": "resources/js/Pages/About.vue",
     "isDynamicEntry": true,
     "imports": [
-      "_PageTitle-Cjzr9t7P.js",
-      "resources/js/app.ts"
+      "_PageTitle-RvgIkkyY.js",
+      "resources/js/app.ts",
+      "__plugin-vue_export-helper-DlAUqK2U.js"
+    ]
+  },
+  "resources/js/Pages/Auth/Login.vue": {
+    "file": "assets/Login-DUtNk4_T.js",
+    "name": "Login",
+    "src": "resources/js/Pages/Auth/Login.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "_AuthLayout-DRFMaF5s.js",
+      "resources/js/app.ts",
+      "__plugin-vue_export-helper-DlAUqK2U.js"
+    ]
+  },
+  "resources/js/Pages/Auth/Register.vue": {
+    "file": "assets/Register-CF5wSfj4.js",
+    "name": "Register",
+    "src": "resources/js/Pages/Auth/Register.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "_AuthLayout-DRFMaF5s.js",
+      "resources/js/app.ts",
+      "__plugin-vue_export-helper-DlAUqK2U.js"
+    ]
+  },
+  "resources/js/Pages/Dashboard.vue": {
+    "file": "assets/Dashboard-CeCmgWhT.js",
+    "name": "Dashboard",
+    "src": "resources/js/Pages/Dashboard.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "_PageTitle-RvgIkkyY.js",
+      "resources/js/app.ts",
+      "__plugin-vue_export-helper-DlAUqK2U.js"
     ]
   },
   "resources/js/Pages/ECommerceView.vue": {
-    "file": "assets/ECommerceView-D8tzCpdh.js",
+    "file": "assets/ECommerceView-FNY-y8La.js",
     "name": "ECommerceView",
     "src": "resources/js/Pages/ECommerceView.vue",
     "isDynamicEntry": true,
@@ -34,17 +85,18 @@
     ]
   },
   "resources/js/Pages/Game.vue": {
-    "file": "assets/Game-B0YN_r9g.js",
+    "file": "assets/Game-DeJuyoaw.js",
     "name": "Game",
     "src": "resources/js/Pages/Game.vue",
     "isDynamicEntry": true,
     "imports": [
-      "_PageTitle-Cjzr9t7P.js",
-      "resources/js/app.ts"
+      "_PageTitle-RvgIkkyY.js",
+      "resources/js/app.ts",
+      "__plugin-vue_export-helper-DlAUqK2U.js"
     ]
   },
   "resources/js/Pages/Games.vue": {
-    "file": "assets/Games-BV8QSNIA.js",
+    "file": "assets/Games-DkGqsrc5.js",
     "name": "Games",
     "src": "resources/js/Pages/Games.vue",
     "isDynamicEntry": true,
@@ -52,30 +104,48 @@
       "resources/js/app.ts"
     ]
   },
+  "resources/js/Pages/Profile/View.vue": {
+    "file": "assets/View-Cc7jONCt.js",
+    "name": "View",
+    "src": "resources/js/Pages/Profile/View.vue",
+    "isDynamicEntry": true,
+    "imports": [
+      "resources/js/app.ts",
+      "__plugin-vue_export-helper-DlAUqK2U.js"
+    ],
+    "assets": [
+      "assets/cover-01-GHYrJjeD.png"
+    ]
+  },
   "resources/js/Pages/Rovers.vue": {
-    "file": "assets/Rovers-Dx1E_4sH.js",
+    "file": "assets/Rovers-Bdz1pabj.js",
     "name": "Rovers",
     "src": "resources/js/Pages/Rovers.vue",
     "isDynamicEntry": true,
     "imports": [
-      "_PageTitle-Cjzr9t7P.js",
-      "resources/js/app.ts"
+      "_PageTitle-RvgIkkyY.js",
+      "resources/js/app.ts",
+      "__plugin-vue_export-helper-DlAUqK2U.js"
     ]
   },
   "resources/js/app.ts": {
-    "file": "assets/app-DXJ_iGW6.js",
+    "file": "assets/app-C45OEuqT.js",
     "name": "app",
     "src": "resources/js/app.ts",
     "isEntry": true,
     "dynamicImports": [
       "resources/js/Pages/About.vue",
+      "resources/js/Pages/Auth/Login.vue",
+      "resources/js/Pages/Auth/Register.vue",
+      "resources/js/Pages/Dashboard.vue",
       "resources/js/Pages/ECommerceView.vue",
       "resources/js/Pages/Game.vue",
       "resources/js/Pages/Games.vue",
+      "resources/js/Pages/Profile/View.vue",
       "resources/js/Pages/Rovers.vue"
     ],
     "css": [
-      "assets/app-Doi2RHiC.css"
+      "assets/app-yNdZ9jK6.css"
     ],
     "assets": [
       "assets/logo-icon-CIBerpFq.svg",
@@ -83,6 +153,7 @@
       "assets/user-02-C7efGC9p.png",
       "assets/user-03-CX0CjwG5.png",
       "assets/user-04-CEXG_9cF.png",
+      "assets/user-06-D2zUL0N2.png",
       "assets/logo-DaTCBI4k.svg",
       "assets/Satoshi-Light-IqwJ_ZjS.woff2",
       "assets/Satoshi-Light-C_dmkKXz.woff",
@@ -258,6 +329,10 @@
     "file": "assets/brand-05-Dno-UME7.svg",
     "src": "resources/js/assets/images/brand/brand-05.svg"
   },
+  "resources/js/assets/images/cover/cover-01.png": {
+    "file": "assets/cover-01-GHYrJjeD.png",
+    "src": "resources/js/assets/images/cover/cover-01.png"
+  },
   "resources/js/assets/images/icon/icon-arrow-down.svg": {
     "file": "assets/icon-arrow-down-0uYKjY_E.svg",
     "src": "resources/js/assets/images/icon/icon-arrow-down.svg"
@@ -265,6 +340,14 @@
   "resources/js/assets/images/icon/icon-calendar.svg": {
     "file": "assets/icon-calendar-BTrXymgd.svg",
     "src": "resources/js/assets/images/icon/icon-calendar.svg"
+  },
+  "resources/js/assets/images/illustration/illustration-03.svg": {
+    "file": "assets/illustration-03-BIahVyio.svg",
+    "src": "resources/js/assets/images/illustration/illustration-03.svg"
+  },
+  "resources/js/assets/images/logo/logo-dark.svg": {
+    "file": "assets/logo-dark-55uoVN-s.svg",
+    "src": "resources/js/assets/images/logo/logo-dark.svg"
   },
   "resources/js/assets/images/logo/logo-icon.svg": {
     "file": "assets/logo-icon-CIBerpFq.svg",
@@ -293,5 +376,9 @@
   "resources/js/assets/images/user/user-05.png": {
     "file": "assets/user-05-DvLXiEro.png",
     "src": "resources/js/assets/images/user/user-05.png"
+  },
+  "resources/js/assets/images/user/user-06.png": {
+    "file": "assets/user-06-D2zUL0N2.png",
+    "src": "resources/js/assets/images/user/user-06.png"
   }
 }
