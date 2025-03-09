@@ -9,16 +9,17 @@ import PageTitle from '@/components/Typography/PageTitle.vue';
         This App is a Laravel 11, Vue 3, Inertia application that also uses
         Tailwind and Typescript.
     </p>
+    <p class="mt-3">It connects to some free open api's:</p>
+    <ul>
+        <li>
+            Steam - a gaming platform used by millions of gamers around the
+            world.
+        </li>
+        <li>Nasa - images from the Mars Rovers.</li>
+    </ul>
     <p class="mt-3">
-        It connects to the steam api, a gaming platform used by millions of
-        gamers around the world.
-    </p>
-    <p class="mt-3">
-        It is a demonstration, and a way for me to transition my skills to this
-        technology stack.
-    </p>
-    <p class="mt-3">
-        Visit my
+        It is a demonstration app, showing the porting of a UI theme 'TailAdmin'
+        to a laravel Vue application, visit my
         <a
             href="https://duncanwhite.co.uk/"
             target="_blank"

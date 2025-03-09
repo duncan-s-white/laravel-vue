@@ -19,7 +19,9 @@ createInertiaApp({
             import.meta.glob<DefineComponent>('./Pages/**/*.vue'),
         );
         page.then((module) => {
-            module.default.layout = module.default.layout || DefaultLayout;
+            if (module.default.layout === undefined) {
+                module.default.layout = DefaultLayout;
+            }
         });
         return page;
     },

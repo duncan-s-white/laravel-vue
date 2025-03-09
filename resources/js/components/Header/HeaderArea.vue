@@ -1,12 +1,18 @@
 <script setup lang="ts">
 import { useSidebarStore } from '@/stores/sidebar';
+import { usePage } from '@inertiajs/vue3';
+import { computed } from 'vue';
 import DarkModeSwitcher from './DarkModeSwitcher.vue';
 import DropdownMessage from './DropdownMessage.vue';
-import DropdownNotification from './DropdownNotification.vue';
+import DropdownNoUser from './DropdownNoUser.vue';
 import DropdownUser from './DropdownUser.vue';
 
 const { toggleSidebar } = useSidebarStore();
 const sidebarStore = useSidebarStore();
+
+const page = usePage();
+
+const user = computed(() => page.props.auth.user);
 </script>
 
 <template>
@@ -124,7 +130,7 @@ const sidebarStore = useSidebarStore();
                     </li>
 
                     <!-- Notification Menu Area -->
-                    <DropdownNotification />
+                    <!-- <DropdownNotification /> -->
                     <!-- Notification Menu Area -->
 
                     <!-- Chat Notification Area -->
@@ -133,7 +139,8 @@ const sidebarStore = useSidebarStore();
                 </ul>
 
                 <!-- User Area -->
-                <DropdownUser />
+                <DropdownUser v-if="user" />
+                <DropdownNoUser v-else />
                 <!-- User Area -->
             </div>
         </div>

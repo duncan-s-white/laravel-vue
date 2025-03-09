@@ -1,57 +1,32 @@
 <?php
 
+use App\Http\Controllers\AppController;
 use App\Http\Controllers\ProfileController;
-use App\Models\App;
 use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
-use Illuminate\Support\Facades\Http;
-use Illuminate\Support\Facades\Request;
 
 Route::get('/', function () {
-    return Inertia::render('About', [
-        'canLogin' => Route::has('login'),
-        'canRegister' => Route::has('register'),
+    return Inertia::render('Dashboard', [
         'laravelVersion' => Application::VERSION,
-        'phpVersion' => PHP_VERSION,
     ]);
-});
+})->name('dashboard');
 
 Route::inertia('/about', 'About');
 
 Route::inertia('/rovers', 'Rovers');
 
-Route::get('/games', function () {
-    return Inertia::render('Games', [
-        'games' => App::query()
-            ->when(Request::input('search'), function ($query, $search) {
-                $query->where('name', 'like', "%{$search}%");
-            })
-            ->paginate(10)
-            ->withQueryString(),
-        'filters' => Request::only(['search'])
-    ]);
-});
+Route::get('/games', [AppController::class, 'all']);
 
-Route::get('/games/{id}', function (string $id) {
+Route::get('/games/{id}', [AppController::class, 'view']);
 
-    $response = Http::get('https://store.steampowered.com/api/appdetails?appids=' . $id);
-
-    $game = json_decode($response, true);
-
-    if ($game[$id]["success"] !== true) abort(404);
-
-    $game = $game[$id]["data"];
-
-    return Inertia::render('Game', ['game' => $game]);
-});
-
-Route::get('/dashboard', function () {
-    return Inertia::render('Dashboard');
-})->middleware(['auth', 'verified'])->name('dashboard');
+// Route::get('/dashboard', function () {
+//     return Inertia::render('Dashboard');
+// })->middleware(['auth', 'verified'])->name('dashboard');
 
 Route::middleware('auth')->group(function () {
-    Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
+    Route::get('/profile', [ProfileController::class, 'view'])->name('profile.view');
+    Route::get('/profile/edit', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });

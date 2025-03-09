@@ -1,6 +1,5 @@
 <script setup lang="ts">
 defineProps({
-    value: String,
     label: String,
     type: String,
     placeholder: String,
@@ -10,7 +9,7 @@ defineProps({
         default: false,
     },
 });
-const search = defineModel();
+const model = defineModel();
 </script>
 
 <template>
@@ -20,7 +19,7 @@ const search = defineModel();
             <span v-if="required" class="text-meta-1">*</span>
         </label>
         <input
-            v-model="search"
+            v-model="model"
             :type="type"
             :placeholder="placeholder"
             class="w-full rounded border-[1.5px] border-stroke bg-transparent px-5 py-3 font-normal text-black outline-none transition focus:border-primary active:border-primary disabled:cursor-default disabled:bg-whiter dark:border-form-strokedark dark:bg-form-input dark:text-white dark:focus:border-primary"
