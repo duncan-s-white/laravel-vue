@@ -26,7 +26,7 @@ defineProps({
             </svg>
             Back to Search</a
         >
-        <JustBreadcrumb :pageTitle="game.name" />
+        <JustBreadcrumb class="hidden sm:block" :pageTitle="game.name" />
     </div>
     <PageTitle>{{ game.name }}</PageTitle>
 
