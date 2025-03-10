@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import AlertSearchWarning from '@/components/Alerts/AlertSearchWarning.vue';
 import HeaderArea from '@/components/Header/HeaderArea.vue';
 import SidebarArea from '@/components/Sidebar/SidebarArea.vue';
 </script>
@@ -21,6 +22,7 @@ import SidebarArea from '@/components/Sidebar/SidebarArea.vue';
             <!-- ===== Main Content Start ===== -->
             <main>
                 <div class="mx-auto max-w-screen-2xl p-4 md:p-6 2xl:p-10">
+                    <AlertSearchWarning />
                     <slot></slot>
                 </div>
             </main>

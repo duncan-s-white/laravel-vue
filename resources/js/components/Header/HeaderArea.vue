@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { useSearchStore } from '@/stores/search';
 import { useSidebarStore } from '@/stores/sidebar';
 import { usePage } from '@inertiajs/vue3';
 import { computed } from 'vue';
@@ -8,6 +9,7 @@ import DropdownNoUser from './DropdownNoUser.vue';
 import DropdownUser from './DropdownUser.vue';
 
 const { toggleSidebar } = useSidebarStore();
+const { search } = useSearchStore();
 const sidebarStore = useSidebarStore();
 
 const page = usePage();
@@ -28,7 +30,6 @@ const user = computed(() => page.props.auth.user);
                     class="z-99999 block rounded-sm border border-stroke bg-white p-1.5 shadow-sm dark:border-strokedark dark:bg-boxdark lg:hidden"
                     @click="
                         () => {
-                            console.log('Toggling Sidebar');
                             toggleSidebar();
                         }
                     "
@@ -82,8 +83,13 @@ const user = computed(() => page.props.auth.user);
             </div>
             <div class="hidden sm:block">
                 <form
-                    action="https://formbold.com/s/unique_form_id"
-                    method="POST"
+                    @submit="
+                        (event: Event) => {
+                            event.preventDefault();
+                            if (event.target)
+                                search(event.target.elements.term.value);
+                        }
+                    "
                 >
                     <div class="relative">
                         <button
@@ -116,6 +122,8 @@ const user = computed(() => page.props.auth.user);
                             type="text"
                             placeholder="Type to search..."
                             class="w-full bg-transparent pl-9 pr-4 focus:outline-none xl:w-125"
+                            name="term"
+                            id="main-search"
                         />
                     </div>
                 </form>
