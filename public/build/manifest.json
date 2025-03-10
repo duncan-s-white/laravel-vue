@@ -1,6 +1,6 @@
 {
-  "_AuthLayout-DRFMaF5s.js": {
-    "file": "assets/AuthLayout-DRFMaF5s.js",
+  "_AuthLayout-CRmkS-jm.js": {
+    "file": "assets/AuthLayout-CRmkS-jm.js",
     "name": "AuthLayout",
     "imports": [
       "resources/js/app.ts",
@@ -11,8 +11,8 @@
       "assets/illustration-03-BIahVyio.svg"
     ]
   },
-  "_PageTitle-RvgIkkyY.js": {
-    "file": "assets/PageTitle-RvgIkkyY.js",
+  "_PageTitle-C5kYZCLU.js": {
+    "file": "assets/PageTitle-C5kYZCLU.js",
     "name": "PageTitle",
     "imports": [
       "__plugin-vue_export-helper-DlAUqK2U.js",
@@ -24,51 +24,51 @@
     "name": "_plugin-vue_export-helper"
   },
   "resources/js/Pages/About.vue": {
-    "file": "assets/About-BLxv_BX3.js",
+    "file": "assets/About-BJij8S2l.js",
     "name": "About",
     "src": "resources/js/Pages/About.vue",
     "isDynamicEntry": true,
     "imports": [
-      "_PageTitle-RvgIkkyY.js",
+      "_PageTitle-C5kYZCLU.js",
       "resources/js/app.ts",
       "__plugin-vue_export-helper-DlAUqK2U.js"
     ]
   },
   "resources/js/Pages/Auth/Login.vue": {
-    "file": "assets/Login-DUtNk4_T.js",
+    "file": "assets/Login-BiKttEtK.js",
     "name": "Login",
     "src": "resources/js/Pages/Auth/Login.vue",
     "isDynamicEntry": true,
     "imports": [
-      "_AuthLayout-DRFMaF5s.js",
+      "_AuthLayout-CRmkS-jm.js",
       "resources/js/app.ts",
       "__plugin-vue_export-helper-DlAUqK2U.js"
     ]
   },
   "resources/js/Pages/Auth/Register.vue": {
-    "file": "assets/Register-CF5wSfj4.js",
+    "file": "assets/Register-DQjc8z-i.js",
     "name": "Register",
     "src": "resources/js/Pages/Auth/Register.vue",
     "isDynamicEntry": true,
     "imports": [
-      "_AuthLayout-DRFMaF5s.js",
+      "_AuthLayout-CRmkS-jm.js",
       "resources/js/app.ts",
       "__plugin-vue_export-helper-DlAUqK2U.js"
     ]
   },
   "resources/js/Pages/Dashboard.vue": {
-    "file": "assets/Dashboard-CeCmgWhT.js",
+    "file": "assets/Dashboard-CROMHl49.js",
     "name": "Dashboard",
     "src": "resources/js/Pages/Dashboard.vue",
     "isDynamicEntry": true,
     "imports": [
-      "_PageTitle-RvgIkkyY.js",
+      "_PageTitle-C5kYZCLU.js",
       "resources/js/app.ts",
       "__plugin-vue_export-helper-DlAUqK2U.js"
     ]
   },
   "resources/js/Pages/ECommerceView.vue": {
-    "file": "assets/ECommerceView-FNY-y8La.js",
+    "file": "assets/ECommerceView-AZ-pLKgW.js",
     "name": "ECommerceView",
     "src": "resources/js/Pages/ECommerceView.vue",
     "isDynamicEntry": true,
@@ -85,18 +85,18 @@
     ]
   },
   "resources/js/Pages/Game.vue": {
-    "file": "assets/Game-DeJuyoaw.js",
+    "file": "assets/Game-BWGCxLXD.js",
     "name": "Game",
     "src": "resources/js/Pages/Game.vue",
     "isDynamicEntry": true,
     "imports": [
-      "_PageTitle-RvgIkkyY.js",
       "resources/js/app.ts",
+      "_PageTitle-C5kYZCLU.js",
       "__plugin-vue_export-helper-DlAUqK2U.js"
     ]
   },
   "resources/js/Pages/Games.vue": {
-    "file": "assets/Games-DkGqsrc5.js",
+    "file": "assets/Games-CANHeQcf.js",
     "name": "Games",
     "src": "resources/js/Pages/Games.vue",
     "isDynamicEntry": true,
@@ -105,7 +105,7 @@
     ]
   },
   "resources/js/Pages/Profile/View.vue": {
-    "file": "assets/View-Cc7jONCt.js",
+    "file": "assets/View-kXy7jA5f.js",
     "name": "View",
     "src": "resources/js/Pages/Profile/View.vue",
     "isDynamicEntry": true,
@@ -118,18 +118,18 @@
     ]
   },
   "resources/js/Pages/Rovers.vue": {
-    "file": "assets/Rovers-Bdz1pabj.js",
+    "file": "assets/Rovers-DUTPKPax.js",
     "name": "Rovers",
     "src": "resources/js/Pages/Rovers.vue",
     "isDynamicEntry": true,
     "imports": [
-      "_PageTitle-RvgIkkyY.js",
+      "_PageTitle-C5kYZCLU.js",
       "resources/js/app.ts",
       "__plugin-vue_export-helper-DlAUqK2U.js"
     ]
   },
   "resources/js/app.ts": {
-    "file": "assets/app-C45OEuqT.js",
+    "file": "assets/app-BU3nb2Az.js",
     "name": "app",
     "src": "resources/js/app.ts",
     "isEntry": true,
@@ -145,7 +145,7 @@
       "resources/js/Pages/Rovers.vue"
     ],
     "css": [
-      "assets/app-yNdZ9jK6.css"
+      "assets/app-D0PEbzgg.css"
     ],
     "assets": [
       "assets/logo-icon-CIBerpFq.svg",

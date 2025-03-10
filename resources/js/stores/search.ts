@@ -8,6 +8,7 @@ export const useSearchStore = defineStore('search', () => {
         searchTerm.value = undefined;
         const mainSearch = document.getElementById('main-search');
         if (mainSearch) {
+            // @ts-ignore:
             mainSearch.value = '';
         }
     }

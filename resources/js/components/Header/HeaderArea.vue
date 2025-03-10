@@ -86,8 +86,10 @@ const user = computed(() => page.props.auth.user);
                     @submit="
                         (event: Event) => {
                             event.preventDefault();
-                            if (event.target)
+                            if (event.target) {
+                                // @ts-ignore:
                                 search(event.target.elements.term.value);
+                            }
                         }
                     "
                 >
