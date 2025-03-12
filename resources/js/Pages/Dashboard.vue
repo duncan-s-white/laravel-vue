@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import DataStatsOne from '@/components/DataStats/DataStatsOne.vue';
 import PageTitle from '@/components/Typography/PageTitle.vue';
 defineProps({
     laravelVersion: String,
@@ -13,5 +14,12 @@ defineProps({
     <p class="mt-3">
         This demonstration application is a Laravel Vue.js application.
     </p>
-    <p>laravel Version: {{ laravelVersion }}</p>
+    <p>Laravel Version: {{ laravelVersion }}</p>
+    <p class="mb-5">Vue.js Version: 3.4.0</p>
+
+    <div
+        class="grid grid-cols-1 gap-4 md:grid-cols-2 md:gap-6 xl:grid-cols-4 2xl:gap-7.5"
+    >
+        <DataStatsOne />
+    </div>
 </template>

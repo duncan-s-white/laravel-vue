@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { useSidebarStore } from '@/stores/sidebar.ts';
-import { Link, router } from '@inertiajs/vue3';
+import { router } from '@inertiajs/vue3';
 import SidebarDropdown from './SidebarDropdown.vue';
 
 const sidebarStore = useSidebarStore();

@@ -1,18 +1,4 @@
-<script setup lang="ts">
-import { router, usePage } from '@inertiajs/vue3';
-import { computed, ref } from 'vue';
-
-const page = usePage();
-
-const user = computed(() => page.props.auth.user);
-
-function onClick(route: string) {
-    router.visit(route);
-}
-
-const cardItems = ref([
-    {
-        icon: `<svg
+import{d as p,L as c,M as C,l as f,o as s,c as a,H as u,b as l,t as o,F as w,W as g}from"./app-Bp2Umq2N.js";const m=["onClick"],M=["innerHTML"],v={class:"mt-4 flex items-end justify-between"},H={class:"text-title-md font-bold text-black dark:text-white"},Z={class:"text-sm font-medium"},y=p({__name:"DataStatsOne",setup(k){const r=c(),e=C(()=>r.props.auth.user);function n(i){g.visit(i)}const d=f([{icon:`<svg
           class="fill-primary dark:fill-white"
           width="22"
           height="16"
@@ -28,14 +14,7 @@ const cardItems = ref([
             d="M11 10.9219C9.38438 10.9219 8.07812 9.61562 8.07812 8C8.07812 6.38438 9.38438 5.07812 11 5.07812C12.6156 5.07812 13.9219 6.38438 13.9219 8C13.9219 9.61562 12.6156 10.9219 11 10.9219ZM11 6.625C10.2437 6.625 9.625 7.24375 9.625 8C9.625 8.75625 10.2437 9.375 11 9.375C11.7563 9.375 12.375 8.75625 12.375 8C12.375 7.24375 11.7563 6.625 11 6.625Z"
             fill=""
           />
-        </svg>`,
-        title: "View games from Steam's api",
-        total: 'Games',
-        route: '/games',
-        display: true,
-    },
-    {
-        icon: `<svg
+        </svg>`,title:"View games from Steam's api",total:"Games",route:"/games",display:!0},{icon:`<svg
             class="fill-primary dark:fill-white"
             width="20"
             height="22"
@@ -55,14 +34,7 @@ const cardItems = ref([
               d="M19.0062 0.618744H17.15C16.325 0.618744 15.6031 1.23749 15.5 2.06249L14.95 6.01562H1.37185C1.0281 6.01562 0.684353 6.18749 0.443728 6.46249C0.237478 6.73749 0.134353 7.11562 0.237478 7.45937C0.237478 7.49374 0.237478 7.49374 0.237478 7.52812L2.36873 13.9562C2.50623 14.4375 2.9531 14.7812 3.46873 14.7812H12.9562C14.2281 14.7812 15.3281 13.8187 15.5 12.5469L16.9437 2.26874C16.9437 2.19999 17.0125 2.16562 17.0812 2.16562H18.9375C19.35 2.16562 19.7281 1.82187 19.7281 1.37499C19.7281 0.928119 19.4187 0.618744 19.0062 0.618744ZM14.0219 12.3062C13.9531 12.8219 13.5062 13.2 12.9906 13.2H3.7781L1.92185 7.56249H14.7094L14.0219 12.3062Z"
               fill=""
             />
-          </svg>`,
-        title: 'About this demo application',
-        total: 'About',
-        route: '/about',
-        display: true,
-    },
-    {
-        icon: `<svg
+          </svg>`,title:"About this demo application",total:"About",route:"/about",display:!0},{icon:`<svg
             class="fill-primary dark:fill-white"
             width="22"
             height="22"
@@ -78,14 +50,7 @@ const cardItems = ref([
               d="M14.3345 5.29375C13.922 5.39688 13.647 5.80938 13.7501 6.22188C13.7845 6.42813 13.8189 6.63438 13.8189 6.80625C13.8189 8.35313 12.547 9.625 11.0001 9.625C9.45327 9.625 8.1814 8.35313 8.1814 6.80625C8.1814 6.6 8.21577 6.42813 8.25015 6.22188C8.35327 5.80938 8.07827 5.39688 7.66577 5.29375C7.25327 5.19063 6.84077 5.46563 6.73765 5.87813C6.6689 6.1875 6.63452 6.49688 6.63452 6.80625C6.63452 9.2125 8.5939 11.1719 11.0001 11.1719C13.4064 11.1719 15.3658 9.2125 15.3658 6.80625C15.3658 6.49688 15.3314 6.1875 15.2626 5.87813C15.1595 5.46563 14.747 5.225 14.3345 5.29375Z"
               fill=""
             />
-          </svg>`,
-        title: 'Authentication sign in',
-        total: 'Sign In',
-        route: '/login',
-        display: computed(() => user.value === null),
-    },
-    {
-        icon: `<svg
+          </svg>`,title:"Authentication sign in",total:"Sign In",route:"/login",display:C(()=>e.value===null)},{icon:`<svg
             class="fill-primary dark:fill-white"
             width="22"
             height="18"
@@ -105,14 +70,7 @@ const cardItems = ref([
               d="M15.9843 10.0313H15.6749C14.6437 10.0313 13.6468 10.3406 12.7874 10.8563C11.8593 9.61876 10.3812 8.79376 8.73115 8.79376H5.67178C2.85303 8.82814 0.618652 11.0625 0.618652 13.8469V16.3219C0.618652 16.975 1.13428 17.4906 1.7874 17.4906H20.2468C20.8999 17.4906 21.4499 16.9406 21.4499 16.2875V15.4625C21.4155 12.4719 18.9749 10.0313 15.9843 10.0313ZM2.16553 15.9438V13.8469C2.16553 11.9219 3.74678 10.3406 5.67178 10.3406H8.73115C10.6562 10.3406 12.2374 11.9219 12.2374 13.8469V15.9438H2.16553V15.9438ZM19.8687 15.9438H13.7499V13.8469C13.7499 13.2969 13.6468 12.7469 13.4749 12.2313C14.0937 11.7844 14.8499 11.5781 15.6405 11.5781H15.9499C18.0812 11.5781 19.8343 13.3313 19.8343 15.4625V15.9438H19.8687Z"
               fill=""
             />
-          </svg>`,
-        title: 'Authentication sign up',
-        total: 'Register',
-        route: '/register',
-        display: computed(() => user.value === null),
-    },
-    {
-        icon: `<svg
+          </svg>`,title:"Authentication sign up",total:"Register",route:"/register",display:C(()=>e.value===null)},{icon:`<svg
             class="fill-primary dark:fill-white"
             width="22"
             height="18"
@@ -132,77 +90,4 @@ const cardItems = ref([
               d="M15.9843 10.0313H15.6749C14.6437 10.0313 13.6468 10.3406 12.7874 10.8563C11.8593 9.61876 10.3812 8.79376 8.73115 8.79376H5.67178C2.85303 8.82814 0.618652 11.0625 0.618652 13.8469V16.3219C0.618652 16.975 1.13428 17.4906 1.7874 17.4906H20.2468C20.8999 17.4906 21.4499 16.9406 21.4499 16.2875V15.4625C21.4155 12.4719 18.9749 10.0313 15.9843 10.0313ZM2.16553 15.9438V13.8469C2.16553 11.9219 3.74678 10.3406 5.67178 10.3406H8.73115C10.6562 10.3406 12.2374 11.9219 12.2374 13.8469V15.9438H2.16553V15.9438ZM19.8687 15.9438H13.7499V13.8469C13.7499 13.2969 13.6468 12.7469 13.4749 12.2313C14.0937 11.7844 14.8499 11.5781 15.6405 11.5781H15.9499C18.0812 11.5781 19.8343 13.3313 19.8343 15.4625V15.9438H19.8687Z"
               fill=""
             />
-          </svg>`,
-        title: 'View your user profile',
-        total: 'Profile',
-        route: '/profile',
-        display: computed(() => user.value !== null),
-    },
-]);
-</script>
-
-<template>
-    <!-- Card Item Start -->
-    <div
-        @click="() => onClick(item.route)"
-        v-for="(item, index) in cardItems.filter(
-            (items) => items.display == true,
-        )"
-        :key="index"
-        class="cursor-pointer rounded-sm border border-stroke bg-white px-7.5 py-6 shadow-default dark:border-strokedark dark:bg-boxdark"
-    >
-        <div
-            class="flex h-11.5 w-11.5 items-center justify-center rounded-full bg-meta-2 dark:bg-meta-4"
-            v-html="item.icon"
-        ></div>
-
-        <div class="mt-4 flex items-end justify-between">
-            <div>
-                <h4 class="text-title-md font-bold text-black dark:text-white">
-                    {{ item.total }}
-                </h4>
-                <span class="text-sm font-medium">{{ item.title }}</span>
-            </div>
-            <!-- 
-            <span
-                class="flex items-center gap-1 text-sm font-medium"
-                :class="{
-                    'text-meta-3': item.growthRate > 0,
-                    'text-meta-5': item.growthRate < 0,
-                }"
-            >
-                {{ item.growthRate }}%
-                <svg
-                    v-if="item.growthRate > 0"
-                    class="fill-meta-3"
-                    width="10"
-                    height="11"
-                    viewBox="0 0 10 11"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                >
-                    <path
-                        d="M4.35716 2.47737L0.908974 5.82987L5.0443e-07 4.94612L5 0.0848689L10 4.94612L9.09103 5.82987L5.64284 2.47737L5.64284 10.0849L4.35716 10.0849L4.35716 2.47737Z"
-                        fill=""
-                    />
-                </svg>
-
-                <svg
-                    v-if="item.growthRate < 0"
-                    class="fill-meta-5"
-                    width="10"
-                    height="11"
-                    viewBox="0 0 10 11"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                >
-                    <path
-                        d="M5.64284 7.69237L9.09102 4.33987L10 5.22362L5 10.0849L-8.98488e-07 5.22362L0.908973 4.33987L4.35716 7.69237L4.35716 0.0848701L5.64284 0.0848704L5.64284 7.69237Z"
-                        fill=""
-                    />
-                </svg>
-            </span> -->
-        </div>
-    </div>
-    <!-- Card Item End -->
-</template>
+          </svg>`,title:"View your user profile",total:"Profile",route:"/profile",display:C(()=>e.value!==null)}]);return(i,x)=>(s(!0),a(w,null,u(d.value.filter(t=>t.display==!0),(t,h)=>(s(),a("div",{onClick:()=>n(t.route),key:h,class:"cursor-pointer rounded-sm border border-stroke bg-white px-7.5 py-6 shadow-default dark:border-strokedark dark:bg-boxdark"},[l("div",{class:"flex h-11.5 w-11.5 items-center justify-center rounded-full bg-meta-2 dark:bg-meta-4",innerHTML:t.icon},null,8,M),l("div",v,[l("div",null,[l("h4",H,o(t.total),1),l("span",Z,o(t.title),1)])])],8,m))),128))}});export{y as _};

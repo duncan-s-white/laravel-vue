@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import AlertWarning from '@/components/Alerts/AlertWarning.vue';
 import InputGroup from '@/components/Forms/InputGroup.vue';
+import PageTitle from '@/components/Typography/PageTitle.vue';
 import { router } from '@inertiajs/vue3';
 import { ref, watch, type PropType } from 'vue';
 
@@ -39,19 +40,15 @@ watch(search, (value) => {
 <template>
     <Head title="Games" />
 
-    <div class="mb-5 flex justify-between">
-        <h2
-            class="my-5 inline-block text-title-md2 font-bold text-black dark:text-white"
-        >
-            Games
-        </h2>
-        <InputGroup
-            v-model="search"
-            customClasses="inline-block"
-            type="text"
-            placeholder="Search..."
-        />
-    </div>
+    <PageTitle> Games </PageTitle>
+
+    <InputGroup
+        class="mb-5"
+        v-model="search"
+        customClasses="inline-block"
+        type="text"
+        placeholder="Search..."
+    />
 
     <div v-if="games.data.length > 0">
         <div class="relative overflow-x-auto shadow-md sm:rounded-lg">

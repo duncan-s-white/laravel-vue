@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import Error from '../Forms/Error.vue';
+
 defineProps({
     label: String,
     type: String,
@@ -7,6 +9,10 @@ defineProps({
     required: {
         type: Boolean,
         default: false,
+    },
+    errorText: {
+        type: String,
+        default: undefined,
     },
 });
 const model = defineModel();
@@ -28,6 +34,7 @@ const model = defineModel();
             <span class="absolute right-4 top-4">
                 <slot></slot>
             </span>
+            <Error v-if="errorText">{{ errorText }}</Error>
         </div>
     </div>
 </template>

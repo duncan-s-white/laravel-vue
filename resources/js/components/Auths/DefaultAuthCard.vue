@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import AlertWarning from '../Alerts/AlertWarning.vue';
 import DarkModeSwitcher from '../Header/DarkModeSwitcher.vue';
 
 const props = defineProps(['subtitle', 'title', 'customClasses']);
@@ -6,7 +7,7 @@ const props = defineProps(['subtitle', 'title', 'customClasses']);
 
 <template>
     <!-- ====== Forms Section Start -->
-    <div class="flex flex-col">
+    <div class="flex max-w-5xl flex-col">
         <div class="flex grow justify-between">
             <Link class="py-2 font-medium" href="/">
                 <svg
@@ -25,7 +26,7 @@ const props = defineProps(['subtitle', 'title', 'customClasses']);
             <DarkModeSwitcher />
         </div>
         <div
-            class="max-w-5xl rounded-sm border border-stroke bg-white shadow-default dark:border-strokedark dark:bg-boxdark"
+            class="mb-5 rounded-sm border border-stroke bg-white shadow-default dark:border-strokedark dark:bg-boxdark"
         >
             <div class="flex flex-wrap items-center">
                 <div class="hidden w-full lg:block lg:w-1/2">
@@ -75,5 +76,10 @@ const props = defineProps(['subtitle', 'title', 'customClasses']);
             </div>
         </div>
         <!-- ====== Forms Section End -->
+
+        <AlertWarning
+            title="Demo Aplication"
+            text="The authentication in this demo application is functional, however you do not have to provide real data to try it out, as you will not receive any emails."
+        />
     </div>
 </template>
