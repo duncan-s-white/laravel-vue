@@ -20,7 +20,10 @@ const handleItemClick = () => {
             (child: SidebarItem) => sidebarStore.selected === child.label,
         );
     }
-    if (props.item.route !== '') router.visit(props.item.route);
+    if (props.item.route !== '') {
+        router.visit(props.item.route);
+        if (sidebarStore.isSidebarOpen) sidebarStore.toggleSidebar();
+    }
 };
 </script>
 
@@ -30,7 +33,7 @@ const handleItemClick = () => {
             onclick="return false"
             :href="item.route"
             class="group relative flex items-center gap-2.5 rounded-sm px-4 py-2 font-medium text-bodydark1 duration-300 ease-in-out hover:bg-graydark dark:hover:bg-meta-4"
-            @click.prevent="handleItemClick"
+            @click="handleItemClick"
             :class="{
                 'bg-graydark dark:bg-meta-4': sidebarStore.page === item.label,
             }"

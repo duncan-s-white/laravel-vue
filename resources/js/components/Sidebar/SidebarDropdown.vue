@@ -14,6 +14,7 @@ const handleItemClick = (index: number) => {
             ? ''
             : props.items[index].label;
     sidebarStore.selected = pageName;
+    if (sidebarStore.isSidebarOpen) sidebarStore.toggleSidebar();
 };
 </script>
 

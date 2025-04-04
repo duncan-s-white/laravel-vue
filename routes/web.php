@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\AppController;
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\UrlShorteningController;
 use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
@@ -14,11 +15,17 @@ Route::get('/', function () {
 
 Route::inertia('/about', 'About');
 
-Route::inertia('/rovers', 'Rovers');
+// Route::inertia('/rovers', 'Rovers');
 
 Route::get('/games', [AppController::class, 'all']);
 
 Route::get('/games/{id}', [AppController::class, 'view']);
+
+Route::get('/url/shorten', [UrlShorteningController::class, 'create']);
+
+Route::post('/url/shorten', [UrlShorteningController::class, 'store'])->name('url.shorten');
+
+Route::get('/url/look-up', [UrlShorteningController::class, 'show'])->name('url.look-up');
 
 // Route::get('/dashboard', function () {
 //     return Inertia::render('Dashboard');
