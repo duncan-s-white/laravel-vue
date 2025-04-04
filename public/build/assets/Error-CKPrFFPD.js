@@ -1,0 +1,1 @@
+import{_ as r}from"./_plugin-vue_export-helper-DlAUqK2U.js";import{c as t,g as o,o as s}from"./app-CzrHodY6.js";const c={},n={class:"text-sm text-red"};function a(e,_){return s(),t("div",n,[o(e.$slots,"default")])}const l=r(c,[["render",a]]);export{l as E};
